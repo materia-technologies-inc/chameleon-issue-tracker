@@ -1,0 +1,69 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: ["enhancement", "type: feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide details about what you'd like to see.
+  
+  - type: dropdown
+    id: state
+    attributes:
+      label: State
+      description: Current state of this issue (will be updated by maintainers)
+      options:
+        - New
+        - Reviewed and Acknowledged
+        - Reviewed and Working as Designed
+        - In Progress
+        - Complete
+      default: 0
+    validations:
+      required: true
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: I'm always frustrated when...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: I would like to see...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe alternatives you've considered
+      placeholder: I've also considered...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or examples about the feature request
+      placeholder: Add additional context here...
+    validations:
+      required: false

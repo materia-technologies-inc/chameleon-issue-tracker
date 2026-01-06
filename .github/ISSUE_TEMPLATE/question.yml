@@ -1,0 +1,65 @@
+name: Question
+description: Ask a question or request clarification
+title: "[Question]: "
+labels: ["question", "type: question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question! Please provide as much context as possible so we can help you effectively.
+  
+  - type: dropdown
+    id: state
+    attributes:
+      label: State
+      description: Current state of this issue (will be updated by maintainers)
+      options:
+        - New
+        - Reviewed and Acknowledged
+        - Reviewed and Working as Designed
+        - In Progress
+        - Complete
+      default: 0
+    validations:
+      required: true
+  
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What is your question?
+      placeholder: Ask your question here...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? What have you already tried?
+      placeholder: |
+        I'm trying to...
+        I've already tried...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: relevant-info
+    attributes:
+      label: Relevant Information
+      description: Any relevant code, configuration, or error messages
+      placeholder: |
+        ```
+        // Add code or error messages here
+        ```
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or links
+      placeholder: Add additional context here...
+    validations:
+      required: false
