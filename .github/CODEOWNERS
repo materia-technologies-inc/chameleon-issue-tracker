@@ -1,0 +1,5 @@
+# Require review from repository maintainers for template changes
+
+/.github/ISSUE_TEMPLATE/ @materia-techologies-inc/MateriaAdmins
+/.github/pull_request_template.md @materia-techologies-inc/MateriaAdmins
+/.github/CODEOWNERS @materia-techologies-inc/MateriaAdmins
