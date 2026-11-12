@@ -40,7 +40,7 @@ body:
       label: Browser and operating system
       placeholder: For example, Chrome 142 on Windows 11
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: description
@@ -54,10 +54,9 @@ body:
     id: reproduction
     attributes:
       label: Minimal reproduction
-      description: A link to a StackBlitz, a CodePen, or a small repository, or the smallest code that shows the problem. A report with a reproduction gets fixed first.
-      render: html
+      description: The smallest code that shows the problem, or a link to a StackBlitz, a CodePen, or a small repository. The live demo on any component's page at chameleonui.io is an easy place to build one. Leave out anything you can't share, but a report with a reproduction gets fixed first.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: additional-context
