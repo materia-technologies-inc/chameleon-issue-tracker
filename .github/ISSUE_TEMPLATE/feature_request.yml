@@ -1,69 +1,52 @@
-name: Feature Request
-description: Suggest a new feature or enhancement
-title: "[Feature]: "
-labels: ["enhancement", "type: feature"]
+name: Feature request
+description: A new component, or a new option on an existing one.
+labels: ["enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for suggesting a new feature! Please provide details about what you'd like to see.
-  
   - type: dropdown
-    id: state
+    id: framework
     attributes:
-      label: State
-      description: Current state of this issue (will be updated by maintainers)
+      label: Framework
+      description: Choose every framework you need this in.
+      multiple: true
       options:
-        - New
-        - Reviewed and Acknowledged
-        - Reviewed and Working as Designed
-        - In Progress
-        - Complete
-      default: 0
+        - Web/JS
+        - React
+        - Blazor
+        - Angular
+        - Vue
+        - Svelte
     validations:
       required: true
-  
-  - type: textarea
-    id: feature-description
+
+  - type: input
+    id: component
     attributes:
-      label: Feature Description
-      description: A clear and concise description of the feature you'd like to see
-      placeholder: Describe the feature...
+      label: Component
+      description: Leave this empty if you're asking for a new component.
+      placeholder: For example, cw-button or CrSlider
     validations:
-      required: true
-  
+      required: false
+
   - type: textarea
     id: problem
     attributes:
-      label: Problem or Use Case
-      description: Is your feature request related to a problem? Please describe.
-      placeholder: I'm always frustrated when...
-    validations:
-      required: false
-  
-  - type: textarea
-    id: proposed-solution
-    attributes:
-      label: Proposed Solution
-      description: Describe the solution you'd like
-      placeholder: I would like to see...
+      label: What you're trying to do
+      description: The problem you want to solve. This matters more to us than any one solution.
     validations:
       required: true
-  
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like
+      description: How you picture it working, with a link to the Material 3 guidance if there is one.
+    validations:
+      required: true
+
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives Considered
-      description: Describe alternatives you've considered
-      placeholder: I've also considered...
-    validations:
-      required: false
-  
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Add any other context, mockups, or examples about the feature request
-      placeholder: Add additional context here...
+      label: What you've tried
+      description: Workarounds you use today, or other libraries that do this well.
     validations:
       required: false

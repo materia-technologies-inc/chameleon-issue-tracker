@@ -1,85 +1,68 @@
-name: Bug Report
-description: Report a bug or unexpected behavior
-title: "[Bug]: "
-labels: ["bug", "type: bug"]
+name: Bug report
+description: A component behaves differently from its documentation.
+labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report! Please provide as much detail as possible.
-  
   - type: dropdown
-    id: state
+    id: framework
     attributes:
-      label: State
-      description: Current state of this issue (will be updated by maintainers)
+      label: Framework
+      description: Choose every framework where you see the problem.
+      multiple: true
       options:
-        - New
-        - Reviewed and Acknowledged
-        - Reviewed and Working as Designed
-        - In Progress
-        - Complete
-      default: 0
+        - Web/JS
+        - React
+        - Blazor
+        - Angular
+        - Vue
+        - Svelte
     validations:
       required: true
-  
+
+  - type: input
+    id: version
+    attributes:
+      label: Chameleon UI version
+      placeholder: For example, 27.1
+    validations:
+      required: true
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      placeholder: For example, cw-button or CrSlider
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      placeholder: For example, Chrome 142 on Windows 11
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
-      label: Bug Description
-      description: A clear and concise description of what the bug is
-      placeholder: Describe the bug...
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
     validations:
       required: true
-  
+
   - type: textarea
-    id: steps-to-reproduce
+    id: reproduction
     attributes:
-      label: Steps to Reproduce
-      description: Steps to reproduce the behavior
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+      label: Minimal reproduction
+      description: A link to a StackBlitz, a CodePen, or a small repository, or the smallest code that shows the problem. A report with a reproduction gets fixed first.
+      render: html
     validations:
       required: true
-  
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Expected Behavior
-      description: What you expected to happen
-      placeholder: Describe what you expected...
-    validations:
-      required: true
-  
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: Actual Behavior
-      description: What actually happened
-      placeholder: Describe what actually happened...
-    validations:
-      required: true
-  
-  - type: textarea
-    id: environment
-    attributes:
-      label: Environment
-      description: Information about your environment
-      placeholder: |
-        - OS: [e.g. Windows 11, macOS]
-        - Browser: [e.g. Chrome, Firefox, Safari]
-        - Version: [e.g. 22]
-    validations:
-      required: false
-  
+
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
-      description: Add any other context, screenshots, or logs about the problem
-      placeholder: Add additional context here...
+      label: Anything else
+      description: Screenshots, console errors, or whether it worked in an earlier version.
     validations:
       required: false
