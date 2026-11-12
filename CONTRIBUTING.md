@@ -1,43 +1,22 @@
-# Contributing to Chameleon Issue Tracker
+# Contributing
 
-Thank you for your interest in contributing to the Chameleon issue tracker!
+This repository tracks issues for Chameleon UI. The source is not public, so the way to contribute here is a clear issue.
 
-## Repository Purpose
+## How to file a good issue
 
-This repository is dedicated to tracking issues, feature requests, and questions for the Chameleon project. It does not contain source code - only issue templates and documentation.
+1. **Search the existing issues.** If yours is already there, add your details to it.
+2. **Choose a form.** Bug report, feature request, documentation, or question.
+3. **Fill in every required field.** For a bug, the framework, version, component, and a minimal reproduction matter most.
+4. **Report one problem per issue.** Two problems in one issue are harder to track and to close.
 
-## How to Contribute
+## After you file
 
-### Submitting Issues
+We read every issue and use labels to show where it stands. We may ask for more detail. If we can't reproduce a problem and don't hear back, we'll close the issue, and you can reopen it with the missing detail at any time.
 
-1. Check existing issues to avoid duplicates
-2. Click "New issue" and select the appropriate template:
-   - **Bug Report** - Report unexpected behavior or errors
-   - **Feature Request** - Suggest new features or enhancements
-   - **Documentation** - Report documentation issues
-   - **Question** - Ask questions or request clarification
+## Security problems
 
-3. Fill out the template completely with as much detail as possible
-4. Submit and our team will review
+Don't open a public issue. See [SECURITY.md](SECURITY.md).
 
-### Issue Templates
+## Changes to the forms
 
-The `.github/ISSUE_TEMPLATE/` directory contains our issue templates. These are protected to ensure consistency:
-
-- ⚠️ **Changes to templates require pull request review**
-- Templates are maintained by the Chameleon team
-- If you notice an issue with a template, please open an issue describing the problem
-
-### Protected Files
-
-The following files and directories are protected and require maintainer approval:
-
-- `.github/ISSUE_TEMPLATE/` - All issue templates
-- `.github/CODEOWNERS` - Code ownership definitions
-- `.github/pull_request_template.md` - PR template (if added)
-
-Changes to these files must go through pull request review by repository maintainers.
-
-## Questions?
-
-If you have questions about contributing, please open a Question issue.
+The Chameleon UI team maintains the forms in `.github/ISSUE_TEMPLATE/`. If a form gets in your way, open a question and tell us.

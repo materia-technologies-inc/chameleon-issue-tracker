@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub Discussions
-    url: https://github.com/materia-technologies-inc/chameleon/discussions
-    about: For general discussions and community support
+  - name: Chameleon UI documentation
+    url: https://chameleonui.io
+    about: Every component's API and examples for Web/JS, React, Blazor, Angular, Vue, and Svelte.
+  - name: Ask your AI agent
+    url: https://chameleonui.io/get-started/ai-agents#the-mcp-server
+    about: Connect the free Chameleon UI MCP server, and your agent answers from the documentation.
+  - name: Report a security problem privately
+    url: https://github.com/materia-technologies-inc/chameleon-issue-tracker/security/advisories/new
+    about: Don't open a public issue for a security problem.

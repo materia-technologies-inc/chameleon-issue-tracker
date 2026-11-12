@@ -1,5 +1,4 @@
-# Require review from repository maintainers for template changes
+# Changes to the issue forms and to this file need a maintainer's review
 
-/.github/ISSUE_TEMPLATE/ @materia-techologies-inc/MateriaAdmins
-/.github/pull_request_template.md @materia-techologies-inc/MateriaAdmins
-/.github/CODEOWNERS @materia-techologies-inc/MateriaAdmins
+/.github/ISSUE_TEMPLATE/ @materia-technologies-inc/materiaadmins
+/.github/CODEOWNERS @materia-technologies-inc/materiaadmins
